@@ -5,6 +5,7 @@ import Clients from '../components/Clients'
 import Contact from '../components/Contact'
 import Map from '../components/Map'
 import Footer from '../components/Footer'
+import ScrollBtn from '../components/ScrollBtn'
 
 export default function App() {
     return (
@@ -16,6 +17,7 @@ export default function App() {
             <Contact />
             <Map />
             <Footer />
+            <ScrollBtn />
         </>
     )
 }

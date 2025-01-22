@@ -15,25 +15,25 @@ export default function Services() {
                     <IoBarChartSharp />
                     <h3>Finanças</h3>
                     <p className="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, totam eius in sint, dolores ratione non placeat explicabo necessitatibus minima deleniti inventore similique corporis voluptatem accusantium ex. Amet, explicabo? Perspiciatis!</p>
-                    <a href="/service/finance"><Button type="button" text="Saiba mais" min={true} /></a>
+                    <a href="/services/finance"><Button type="button" text="Saiba mais" min={true} /></a>
                 </div>
                 <div className="service-container d-flex flex-column align-items-center justify-content-evenly p-2">
                     <BsFillMegaphoneFill />
                     <h3>Marketing</h3>
                     <p className="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, totam eius in sint, dolores ratione non placeat explicabo necessitatibus minima deleniti inventore similique corporis voluptatem accusantium ex. Amet, explicabo? Perspiciatis!</p>
-                    <a href="/service/marketing"><Button type="button" text="Saiba mais" min={true} /></a>
+                    <a href="/services/marketing"><Button type="button" text="Saiba mais" min={true} /></a>
                 </div>
                 <div className="service-container d-flex flex-column align-items-center justify-content-evenly p-2">
                     <BiSolidNetworkChart />
                     <h3>Processos</h3>
                     <p className="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, totam eius in sint, dolores ratione non placeat explicabo necessitatibus minima deleniti inventore similique corporis voluptatem accusantium ex. Amet, explicabo? Perspiciatis!</p>
-                    <a href="/service/processes"><Button type="button" text="Saiba mais" min={true} /></a>
+                    <a href="/services/processes"><Button type="button" text="Saiba mais" min={true} /></a>
                 </div>
                 <div className="service-container d-flex flex-column align-items-center justify-content-evenly p-2">
                     <IoIosPeople />
                     <h3>Pessoas</h3>
                     <p className="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, totam eius in sint, dolores ratione non placeat explicabo necessitatibus minima deleniti inventore similique corporis voluptatem accusantium ex. Amet, explicabo? Perspiciatis!</p>
-                    <a href="/service/people"><Button type="button" text="Saiba mais" min={true} /></a>
+                    <a href="/services/people"><Button type="button" text="Saiba mais" min={true} /></a>
                 </div>
             </div>
         </div>
