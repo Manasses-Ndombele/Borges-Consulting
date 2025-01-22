@@ -8,9 +8,9 @@ import '../assets/pages/service.sass';
 export default function FinanceServices() {
     return (
         <>
-            <Header route='/services/finance' bgActive={true} activateSubNav={true} />
+            <Header route='/services/finance' bgActive={true} />
             <main>
-                <article className="p-3">
+                <article className="p-3 px-md-5">
                     <div className="icon-area w-100 first-type d-flex justify-content-center align-items-center">
                         <IoBarChartSharp />
                     </div>

@@ -4,6 +4,9 @@
     background-color: base.$tertiary-color
 
     .services-containers
+        @include base.tablet()
+            grid-template-columns: 50% 50%
+
         .service-container
             color: base.$secondary-color-b
             height: 28rem

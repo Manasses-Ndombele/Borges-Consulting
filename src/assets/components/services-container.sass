@@ -3,7 +3,14 @@
 .services-area
     background-color: base.$tertiary-color
 
-    .services-container
+    h2
+        @include base.tablet()
+            font-family: base.$libre-baskerville-font
+
+    .services-containers
+        @include base.tablet()
+            grid-template-columns: 50% 50%
+
         .service-container
             color: base.$secondary-color
 

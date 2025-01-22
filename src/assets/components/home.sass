@@ -5,9 +5,14 @@
     background-position: left top
     background-repeat: no-repeat
     background-size: cover
+    @include base.tablet()
+        height: 100vh
 
     .main-area
         color: base.$secondary-color-b
+        @include base.tablet()
+            width: 80%
+            height: 80%
 
         h1
             font-family: base.$libre-baskerville-font

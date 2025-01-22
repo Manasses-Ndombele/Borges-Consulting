@@ -8,9 +8,9 @@ import '../assets/pages/service.sass';
 export default function PeopleServices() {
     return (
         <>
-            <Header route='/services/people' bgActive={true} activateSubNav={true} />
+            <Header route='/services/people' bgActive={true} />
             <main>
-                <article className="p-3">
+                <article className="p-3 px-md-5">
                     <div className="icon-area w-100 second-type d-flex justify-content-center align-items-center">
                         <IoIosPeople />
                     </div>

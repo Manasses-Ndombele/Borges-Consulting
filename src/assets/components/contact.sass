@@ -4,6 +4,9 @@
     background-color: base.$secondary-color-c
 
     .contact-containers
+        @include base.tablet()
+            grid-template-columns: 50% 50%
+
         .contact-container
             h2
                 color: base.$primary-color-b

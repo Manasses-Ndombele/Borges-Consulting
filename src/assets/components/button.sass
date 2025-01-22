@@ -5,6 +5,9 @@
     font-size: 1.1em
     color: base.$secondary-color-b
     transition: background-color .3s ease-in
+    @include base.tablet()
+        width: min-content !important
+        white-space: nowrap
 
     &:hover
         background-color: base.$primary-color-c

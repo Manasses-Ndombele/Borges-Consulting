@@ -10,7 +10,7 @@ export default function Services() {
     return (
         <div id="services-area" className="py-5 area">
             <ContainerTitle text="Serviços" />
-            <div className="services-containers p-3  d-flex flex-column gap-4">
+            <div className="services-containers p-3 d-flex flex-column gap-4 d-md-grid px-md-5">
                 <div className="service-container d-flex flex-column align-items-center justify-content-evenly p-2">
                     <IoBarChartSharp />
                     <h3>Finanças</h3>

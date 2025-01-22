@@ -1,51 +1,90 @@
 @use "../base"
 
 header
+    @include base.tablet()
+        height: 20%
+
     .top-header-area
         font-size: 1.2em
         color: base.$primary-color
         background-color: base.$quartenary-color
 
-    .bottom-header-area
-        &.bg-active
-            background-color: base.$tertiary-color-c
+    .container-menu-logo
+        @include base.tablet()
+            &.bg-active
+                background-color: base.$tertiary-color-c
+                padding-bottom: 3rem
 
-        img
-            width: 5rem
+        .bottom-header-area
+            &.bg-active
+                background-color: base.$tertiary-color-c
+                @include base.tablet()
+                    background-color: transparent
 
-        button 
-            font-size: 1.6em
-            color: base.$primary-color
+            img
+                width: 5rem
 
-    .main-menu
-        background-color: base.$secondary-color
-        transition: all 0.8s ease-in
+            button 
+                font-size: 1.6em
+                color: base.$primary-color
 
-        &.deactivated
-            opacity: 0
-            transform: translateX(100vw)
-            visibility: hidden
+        .main-menu
+            background-color: base.$secondary-color
+            transition: all 0.8s ease-in
+            @include base.tablet()
+                position: static !important
+                width: min-content !important
+                height: min-content !important
+                background-color: transparent
 
-        &.activated
-            opacity: 1
-            transform: none
-            visibility: visible
+            &.deactivated
+                opacity: 0
+                transform: translateX(100vw)
+                visibility: hidden
+                @include base.tablet()
+                    opacity: 1
+                    transform: none
+                    visibility: visible
 
-        button
-            font-size: 2em
+            &.activated
+                opacity: 1
+                transform: none
+                visibility: visible
 
-        .main-nav
-            a
-                color: base.$quartenary-color
-                border-bottom: 1px solid base.$quartenary-color
-                cursor: pointer
+            button
+                font-size: 2em
 
-                &.active
-                    color: base.$primary-color
+            .main-nav
+                @include base.tablet()
+                    position: relative
 
-            nav#subnav-main
-                &.deactivated
-                    display: none
+                a
+                    color: base.$quartenary-color
+                    border-bottom: 1px solid base.$quartenary-color
+                    cursor: pointer
+                    @include base.tablet()
+                        border: none
+                        white-space: nowrap
+                        color: base.$secondary-color
+                        transition: .3s ease-in
 
-                &.activated
-                    display: flex
+                        &:hover
+                            color: base.$primary-color-b
+
+                    &.active
+                        color: base.$primary-color-b
+
+                nav#subnav-main
+                    @include base.tablet()
+                        display: none
+
+                    &.deactivated
+                        display: none
+
+                    &.activated
+                        display: flex
+                        @include base.tablet()
+                            position: absolute
+                            top: 25px
+                            background-color: base.$quartenary-color-b
+                            padding: 1rem

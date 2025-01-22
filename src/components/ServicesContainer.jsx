@@ -8,29 +8,27 @@ import '../assets/components/services-container.sass';
 export default function ServicesContainer() {
     return (
         <div className="services-area">
-            <div className="container-title d-none">
-                <h2>Veja todos os serviços</h2>
-            </div>
-            <div className="services-container p-3 d-flex flex-column gap-3">
-                <div className="service-container d-flex flex-column align-items-center gap-2 p-2">
+            <h2 className="d-none d-md-block text-md-center p-md-4 m-md-0">Veja todos os serviços</h2>
+            <div className="services-containers p-3 d-flex flex-column gap-3 d-md-grid px-md-4">
+                <div className="service-container d-flex flex-column align-items-center gap-2 p-2 py-md-4 gap-md-3">
                     <IoBarChartSharp />
                     <h3>Finanças</h3>
-                    <a href="/services/finance" className="w-100"><Button type="button" text="Saiba mais" min={false} /></a>
+                    <a href="/services/finance" className="w-100 text-md-center"><Button type="button" text="Saiba mais" min={false} /></a>
                 </div>
-                <div className="service-container d-flex flex-column align-items-center gap-2 p-2">
+                <div className="service-container d-flex flex-column align-items-center gap-2 p-2 py-md-4 gap-md-3">
                     <BsFillMegaphoneFill />
                     <h3>Marketing</h3>
-                    <a href="/services/marketing" className="w-100"><Button type="button" text="Saiba mais" min={false} /></a>
+                    <a href="/services/marketing" className="w-100 text-md-center"><Button type="button" text="Saiba mais" min={false} /></a>
                 </div>
-                <div className="service-container d-flex flex-column align-items-center gap-2 p-2">
+                <div className="service-container d-flex flex-column align-items-center gap-2 p-2 py-md-4 gap-md-3">
                     <BiSolidNetworkChart />
                     <h3>Processos</h3>
-                    <a href="/services/processes" className="w-100"><Button type="button" text="Saiba mais" min={false} /></a>
+                    <a href="/services/processes" className="w-100 text-md-center"><Button type="button" text="Saiba mais" min={false} /></a>
                 </div>
-                <div className="service-container d-flex flex-column align-items-center gap-2 p-2">
+                <div className="service-container d-flex flex-column align-items-center gap-2 p-2 py-md-4 gap-md-3">
                     <IoIosPeople />
                     <h3>Pessoas</h3>
-                    <a href="/services/people" className="w-100"><Button type="button" text="Saiba mais" min={false} /></a>
+                    <a href="/services/people" className="w-100 text-md-center"><Button type="button" text="Saiba mais" min={false} /></a>
                 </div>
             </div>
         </div>
