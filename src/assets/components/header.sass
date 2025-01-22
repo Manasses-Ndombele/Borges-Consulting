@@ -1,0 +1,48 @@
+@use "../base"
+
+header
+    .top-header-area
+        font-size: 1.2em
+        color: base.$primary-color
+        background-color: base.$quartenary-color
+
+    .bottom-header-area
+        img
+            width: 5rem
+
+        button 
+            font-size: 1.6em
+            color: base.$primary-color
+
+    .main-menu
+        background-color: base.$secondary-color
+        transition: all 0.8s ease-in
+
+        &.deactivated
+            opacity: 0
+            transform: translateX(100vw)
+            visibility: hidden
+
+        &.activated
+            opacity: 1
+            transform: none
+            visibility: visible
+
+        button
+            font-size: 2em
+
+        .main-nav
+            a
+                color: base.$quartenary-color
+                border-bottom: 1px solid base.$quartenary-color
+                cursor: pointer
+
+                &.active
+                    color: base.$primary-color
+
+            nav#subnav-main
+                &.deactivated
+                    display: none
+
+                &.activated
+                    display: flex

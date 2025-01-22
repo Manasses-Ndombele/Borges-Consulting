@@ -1,16 +1,19 @@
+import '../assets/components/clients.sass'
+import ContainerTitle from './ContainerTitle'
+
 export default function Clients() {
     return (
-        <div className="clients-brand">
-            <div className="container-title">
-                <h2>Clientes</h2>
-            </div>
-            <div className="clients-brands-containers">
-                <img src="/bizno_tracker.png" alt="Cliente 1" />
-                <img src="/boomsales.png" alt="Cliente 2" />
-                <img src="/criptomaster.png" alt="Cliente 3" />
-                <img src="/didacta.png" alt="Cliente 4" />
-                <img src="/megamed.png" alt="Cliente 5" />
-                <img src="/raceshadows.png" alt="Cliente 6" />
+        <div id="clients-area" className="area">
+            <div className="clients-area-overlay p-4">
+                <ContainerTitle text="Clientes" />
+                <div className="clients-brands d-flex flex-column align-items-center gap-3">
+                    <img src="/bizno_tracker.png" alt="Cliente 1" />
+                    <img src="/boomsales.png" alt="Cliente 2" />
+                    <img src="/criptomaster.png" alt="Cliente 3" />
+                    <img src="/didacta.png" alt="Cliente 4" />
+                    <img src="/megamed.png" alt="Cliente 5" />
+                    <img src="/raceshadows.png" alt="Cliente 6" />
+                </div>
             </div>
         </div>
     )

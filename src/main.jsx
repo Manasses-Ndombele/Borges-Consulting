@@ -6,6 +6,8 @@ import ProcessesServices from './routes/ProcessesServices'
 import PeopleServices from './routes/PeopleServices'
 import App from './routes/App'
 
+document.body.style.overflowX = 'hidden'
+
 createRoot(document.getElementById('root')).render(
     <BrowserRouter>
         <Routes>

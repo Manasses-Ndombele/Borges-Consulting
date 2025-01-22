@@ -1,0 +1,21 @@
+@use '../base'
+
+.map-area
+    .actions-area
+        button
+            color: base.$tertiary-color-c
+            background-color: base.$secondary-color
+            width: 5rem
+            z-index: 1
+
+            &.active
+                color: base.$quartenary-color
+                font-weight: bold
+
+            &#roadmap-btn
+                top: 1rem
+                left: 1rem
+
+            &#satellite-btn
+                top: 1rem
+                left: 6rem

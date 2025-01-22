@@ -1,0 +1,22 @@
+@use '../base'
+
+#contact-area
+    background-color: base.$secondary-color-c
+
+    .contact-containers
+        .contact-container
+            h2
+                color: base.$primary-color-b
+                font-family: base.$libre-baskerville-font
+
+        form
+            .form-control
+                transition: border .4s ease-out
+
+                &:hover,
+                &:focus
+                    border: 1px solid base.$quartenary-color !important
+                    box-shadow: none !important
+
+            textarea
+                height: 8rem
