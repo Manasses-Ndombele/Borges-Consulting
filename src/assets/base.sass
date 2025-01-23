@@ -16,11 +16,23 @@ $extra-quartenary-color: #B7DFED
 $libre-baskerville-font: 'Libre Baskerville', serif
 $open-sans-font: 'Open Sans', sans-serif
 
+@mixin tablet()
+    @media screen and (min-width: 768px)
+        @content
+
+@mixin desktop()
+    @media screen and (min-width: 992px)
+        @content
+
 body
     font-family: $open-sans-font
     background-color: $secondary-color
     color: $quartenary-color
+    overflow: scroll
 
-@mixin tablet()
-    @media screen and (min-width: 768px)
-        @content
+    &.main-menu-opened
+        overflow: hidden
+
+    @include tablet()
+        &.main-menu-opened
+            overflow: scroll

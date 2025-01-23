@@ -18,7 +18,7 @@ export default function Contact() {
     return (
         <div id="contact-area" className="px-3 py-5 area">
             <ContainerTitle text="Contato" />
-            <div className="contact-containers mt-4 d-md-grid">
+            <div className="contact-containers mt-4 d-md-grid mx-lg-auto">
                 <div className="contact-container text-center mb-4">
                     <h2>Endereço</h2>
                     <p>Av. Pedro de Castro Van Dunem Loy <br /> Luanda, Maria Eugênia Neto 0000-000</p>

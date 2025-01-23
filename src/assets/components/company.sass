@@ -1,14 +1,27 @@
 @use "../base"
 
 #company-area
+    @include base.tablet()
+        position: relative
+
     img
         height: 16rem
         @include base.tablet()
             width: 80% !important
             height: 18rem
 
+        @include base.desktop()
+            width: 50% !important
+            height: 30rem
+
     .more-info
         border: 8px solid base.$tertiary-color
+        @include base.tablet()
+            width: 50%
+            padding: 1rem 5rem !important
+            position: absolute
+            right: 4rem
+            height: 26rem
 
         h2
             font-family: base.$libre-baskerville-font

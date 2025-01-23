@@ -19,11 +19,11 @@ export default function Header(props) {
     const toggleMainMenuStatus = () => {
         if (mainMenuStatus === 'deactivated') {
             setMainMenuStatus('activated')
-            document.body.style.overflowY = 'hidden'
+            document.body.classList.add('main-menu-opened')
         } else if (mainMenuStatus === 'activated') {
             setMainMenuStatus('deactivated')
             setIsSubNavMainActive(false)
-            document.body.style.overflowY = 'scroll'
+            document.body.classList.remove('main-menu-opened')
         }
     }
 
@@ -94,6 +94,24 @@ export default function Header(props) {
         }
     }, [])
 
+    useEffect(() => {
+        document.querySelector('a#submain-nav-link').addEventListener('mouseenter', () => {
+            setIsSubNavMainActive(true)
+        })
+
+        document.querySelector('a#submain-nav-link').addEventListener('mouseleave', () => {
+            setIsSubNavMainActive(false)
+        })
+
+        document.querySelector('nav#subnav-main').addEventListener('mouseover', () => {
+            setIsSubNavMainActive(true)
+        })
+
+        document.querySelector('nav#subnav-main').addEventListener('mouseleave', () => {
+            setIsSubNavMainActive(false)
+        })
+    })
+
     return (
         <header>
             <div className="top-header-area text-center p-2 text-md-end pe-5"><MdOutlinePhoneInTalk /> (+244) 923 224 456</div>
@@ -104,7 +122,7 @@ export default function Header(props) {
                 </div>
                 <menu className={`${mainMenuStatus} main-menu position-absolute start-0 top-0 vw-100 vh-100 m-0 p-0 text-end pe-3 pt-3 d-flex flex-column justify-content-center align-items-end p-md-0`}>
                     <button type="button" className="border-0 bg-transparent d-md-none" onClick={toggleMainMenuStatus}><IoClose /></button>
-                    <nav className="main-nav d-flex flex-column align-items-center justify-content-center gap-2 w-100 px-5 flex-md-row p-md-0 gap-md-3">
+                    <nav className="main-nav d-flex flex-column align-items-center justify-content-center gap-2 w-100 px-5 flex-md-row p-md-0 gap-md-3 gap-lg-4">
                         <a href="/" data-target-id="home-area" className={`${activeArea === 'home-area' ? 'active' : ''} p-2 text-uppercase text-decoration-none w-100 text-center p-md-0`.trimStart()} onClick={toggleActiveArea}>Início</a>
                         <a data-target-id="company-area" className={`${activeArea === 'company-area' ? 'active' : ''} p-2 text-uppercase text-decoration-none w-100 text-center p-md-0`.trimStart()} onClick={toggleActiveArea}>A empresa</a>
                         <a
@@ -113,13 +131,13 @@ export default function Header(props) {
                             className={`${activeArea === 'services-area' || /services/.test(activeArea) ? 'active' : ''} ${isSubNavMainActive ? 'border-0' : ''} p-2 text-uppercase text-decoration-none w-100 text-center p-md-0 d-flex align-items-center justify-content-center gap-2`.trimStart()}
                             onClick={toggleActiveArea}>
                                 Serviços { isSubNavMainActive ?
-                                    (<IoChevronDownOutline onClick={
+                                    (<IoChevronDownOutline className="d-lg-none" onClick={
                                         (e) => {
                                             e.stopPropagation()
                                             toggleSubNav()
                                         }
                                     } /> ) :
-                                    ( <IoChevronUpOutline onClick={
+                                    ( <IoChevronUpOutline className="d-lg-none" onClick={
                                         (e) => {
                                             e.stopPropagation()
                                             toggleSubNav()

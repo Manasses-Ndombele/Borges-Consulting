@@ -1,25 +1,40 @@
 @use '../base'
 
 article
-    .icon-area
-        color: base.$secondary-color
-        height: 8rem
+    @include base.desktop()
+        width: 90%
+        height: 100vh
 
-        &.first-type
-            background-color: base.$extra-primary-color
+    .icon-container
+        @include base.desktop()
+            height: 100%
+            padding-top: 5rem
 
-        &.second-type
-            background-color: base.$extra-secondary-color
+        .icon-area
+            color: base.$secondary-color
+            height: 8rem
+            @include base.desktop()
+                width: 15rem !important
+                height: 16rem
 
-        &.third-type
-            background-color: base.$extra-tertiary-color
+            &.first-type
+                background-color: base.$extra-primary-color
 
-        &.fourth-type
-            background-color: base.$extra-quartenary-color
+            &.second-type
+                background-color: base.$extra-secondary-color
 
-        svg
-            font-size: 5em
+            &.third-type
+                background-color: base.$extra-tertiary-color
+
+            &.fourth-type
+                background-color: base.$extra-quartenary-color
+
+            svg
+                font-size: 5em
 
     .description-area
+        @include base.desktop()
+            width: 70%
+
         h1
             font-family: base.$libre-baskerville-font

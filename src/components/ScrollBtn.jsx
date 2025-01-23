@@ -18,7 +18,7 @@ export default function ScrollBtn() {
     }, [])
 
     return (
-        <button type="button" id="scroll-btn" className={`${btnVisibility ? '' : 'visually-hidden'} text-center position-fixed bottom-0 start-0 mb-4 ms-2 p-2`.trimStart()} onClick={
+        <button type="button" id="scroll-btn" className={`${btnVisibility ? '' : 'visually-hidden'} text-center position-fixed bottom-0 start-0 mb-4 ms-2 p-2 d-lg-none`.trimStart()} onClick={
             () => {
                 window.scrollTo({
                     top: 0,

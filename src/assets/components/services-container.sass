@@ -2,6 +2,8 @@
 
 .services-area
     background-color: base.$tertiary-color
+    @include base.desktop()
+        height: 100vh
 
     h2
         @include base.tablet()
@@ -10,6 +12,11 @@
     .services-containers
         @include base.tablet()
             grid-template-columns: 50% 50%
+
+        @include base.desktop()
+            grid-template-columns: 25% 25% 25% 25%
+            gap: 0px !important
+            width: 90%
 
         .service-container
             color: base.$secondary-color
