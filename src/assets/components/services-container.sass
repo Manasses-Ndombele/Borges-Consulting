@@ -18,8 +18,13 @@
             gap: 0px !important
             width: 90%
 
+        @include base.bigDesktop()
+            width: 80%
+
         .service-container
             color: base.$secondary-color
+            @include base.bigDesktop()
+                height: 18rem
 
             &:first-child
                 background-color: base.$extra-primary-color

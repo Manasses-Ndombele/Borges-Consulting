@@ -2,7 +2,7 @@ import '../assets/components/company.sass';
 
 export default function Company() {
     return (
-        <div id="company-area" className="p-2 area px-md-5 d-md-flex flex-md-column align-items-md-center px-lg-3 flex-lg-row justify-content-lg-start">
+        <div id="company-area" className="p-2 area d-md-flex mb-md-5 mx-lg-auto align-items-lg-center justify-content-lg-start mx-xl-auto">
             <img src="/business.jpeg" alt="Exemplo de funcionários da empresa trabalhando" className="w-100 my-2" />
             <div className="more-info p-3 m-2 m-lg-0 d-lg-flex justify-content-lg-center flex-lg-column">
                 <h2>Uma empresa especializada em renovar o seu negócio</h2>

@@ -4,11 +4,17 @@
     @include base.tablet()
         position: relative
 
+    @include base.desktop()
+        width: 80%
+
+    @include base.bigDesktop()
+        width: 70%
+
     img
         height: 16rem
         @include base.tablet()
-            width: 80% !important
-            height: 18rem
+            width: 50% !important
+            height: 25rem
 
         @include base.desktop()
             width: 50% !important
@@ -18,9 +24,9 @@
         border: 8px solid base.$tertiary-color
         @include base.tablet()
             width: 50%
-            padding: 1rem 5rem !important
+            padding: 1rem 2.5rem !important
             position: absolute
-            right: 4rem
+            right: 1rem
             height: 26rem
 
         h2

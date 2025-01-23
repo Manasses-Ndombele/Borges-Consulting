@@ -5,11 +5,7 @@ article
         width: 90%
         height: 100vh
 
-    .icon-container
-        @include base.desktop()
-            height: 100%
-            padding-top: 5rem
-
+    .container-info
         .icon-area
             color: base.$secondary-color
             height: 8rem
@@ -32,9 +28,9 @@ article
             svg
                 font-size: 5em
 
-    .description-area
-        @include base.desktop()
-            width: 70%
+        .description-area
+            @include base.desktop()
+                width: 70%
 
         h1
             font-family: base.$libre-baskerville-font

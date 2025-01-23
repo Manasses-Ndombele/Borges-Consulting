@@ -37,8 +37,8 @@ export default function Contact() {
                     <input type="number" className="form-control border-0 rounded-0 mb-3 py-2 ps-4" placeholder="Telefone" required onChange={(e) => { e.target.reportValidity() }} onFocus={(e) => { e.target.reportValidity() }} onBlur={(e) => { e.target.reportValidity() }} />
                     <textarea className="form-control border-0 rounded-0 mb-3 py-2 ps-4" placeholder="Digite sua mensagem aqui..." required onChange={(e) => { e.target.reportValidity() }} onFocus={(e) => { e.target.reportValidity() }} onBlur={(e) => { e.target.reportValidity() }}></textarea>
                     <Button type="button" text="Enviar" min={true} expand={true} mdMin={true} clickEvent={showThanksMsg} />
+                    <p className="text-success my-2 visually-hidden" id="form-success-text">Obrigado por enviar os seus dados!</p>
                 </form>
-                <p className="text-success my-2 visually-hidden" id="form-success-text">Obrigado por enviar os seus dados!</p>
             </div>
         </div>
     )
