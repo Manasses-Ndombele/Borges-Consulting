@@ -12,7 +12,7 @@ export default function Footer() {
                 <a href="#"><FaTwitter /></a>
                 <a href="#"><FaLinkedin /></a>
             </nav>
-            <p className="mb-0">&copy; 2025 - Manassés Ndombele - Desenvolvedor Fullstack</p>
+            <a href="https://manassesndombele.vercel.app" target="_blank" rel="external" className="mb-0">&copy; 2025 - Manassés Ndombele - Desenvolvedor Fullstack</a>
         </footer>
     )
 }
